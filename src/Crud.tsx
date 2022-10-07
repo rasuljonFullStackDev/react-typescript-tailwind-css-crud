@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, useState } from "react";
+import React, {  FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -38,11 +38,7 @@ const Add: FC = () => {
     }
   }
   console.log(errors);
-  const [focus, setFocus] = useState(false)
-  const inputFoucus = () => {
-    setFocus(true)
-  }
-
+ 
   const [tab, setTab] = useState(false);
   const userEdit = (data: any): void => {
     for (let key in data) {
