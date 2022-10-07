@@ -70,7 +70,7 @@ const Add: FC = () => {
             }
 
             setTab(false)
-          }} className="bg-blue-500 hover:blue-red-700 inline-block  m-1 text-white font-bold py-2 px-4 rounded duration-100 block m-auto">Qo'shish</button>
+          }} className={`bg-red-500 hover:blue-red-700 inline-block  m-1 text-white font-bold py-2 px-4 rounded duration-100 block m-auto`}>Cancel</button>
         </div>
         <div className="flex justify-center">
           <form onSubmit={handleSubmit(sendData)} className=" w-[400px]  p-2 border border-[1px] rounded-[5px]">
@@ -127,7 +127,8 @@ const Add: FC = () => {
               <span className="text-sm text-[red]">{errors.confirmPassword?.message?.toString()}</span>
             </div>
 
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded duration-100 block m-auto">Qo'shish</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded duration-100 block m-auto">{
+            id ? "Edit" : "Add"}</button>
           </form>
         </div>
       </div> :
@@ -141,7 +142,7 @@ const Add: FC = () => {
               }
             }
             setTab(true)
-          }} className="bg-blue-500 hover:blue-red-700 inline-block  m-1 text-white font-bold py-2 px-4 rounded duration-100 block m-auto">Qo'shish</button>
+          }} className="bg-blue-500 hover:blue-red-700 inline-block  m-1 text-white font-bold py-2 px-4 rounded duration-100 block m-auto">Add</button>
         </div>
         <table className="border border-[1px] w-full">
           <tbody>
