@@ -1,5 +1,5 @@
 import React from 'react'
-import Add from './Add'
+import Add from './Crud'
 import List from './List'
 
 const App = () => {
