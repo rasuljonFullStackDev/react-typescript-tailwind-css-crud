@@ -1,0 +1,31 @@
+1.npx create-react-app . --template typescript
+2.npm install -D tailwindcss
+3.npx tailwindcss init -p
+4.
+qollanma https://v1.tailwindcss.com/
+
+tailwind.config.js faylida buladi
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+5.input css yaratib olamiz va index jsga boglaymiz
+shularni cssga tashlab quyamiz
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+6.npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+7.ishlamasa qayta npm start qilamiz
+8.bu validation uchun kutubhona
+npm i yup react-hook-form
+qollanma
+https://www.bezkoder.com/react-hook-form-typescript/
+9.projectimizga yangi kutubhona ornatilsan ishlamay qolsa 
+yangindan ishga tushring
+
